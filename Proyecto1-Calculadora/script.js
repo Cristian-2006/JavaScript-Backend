@@ -5,41 +5,39 @@ botones.forEach(boton => {
     boton.addEventListener("click", () => {
         const botonOn = boton.textContent;
 
-        if(boton.id === "limpiar"){
+        if (boton.id === "limpiar") {
             pantalla.textContent = "0";
             return;
         }
 
-
-        if(boton.id === "borrar"){
-            if(pantalla.textContent.length === 1){
-                pantalla.textContent ="0";
-            }else{
-            pantalla.textContent = pantalla.textContent.slice(0, -1)
+        if (boton.id === "borrar") {
+            if (pantalla.textContent.length === 1) {
+                pantalla.textContent = "0";
+            } else {
+                pantalla.textContent = pantalla.textContent.slice(0, -1)
             }
             return;
         }
 
-        if(boton.id === "igual"){
-            try{
+        if (boton.id === "igual") {
+            try {
                 pantalla.textContent = eval(pantalla.textContent);
 
-            }catch{
+            } catch {
                 pantalla.textContent = "ERROR"
             }
             return;
         }
 
-        if(/[/*+-.]/.test(pantalla.textContent.slice(-1)) && /[/*+-.]/.test(botonOn)){
-            
+        if (/[+\-*/]/.test(pantalla.textContent.slice(-1)) && /[+\-*/]/.test(botonOn)) {
+            throw new Error("ERROR");
         }
 
-
-        if(pantalla.textContent === "0" || pantalla.textContent === "ERROR"){
+        if (pantalla.textContent === "0" || pantalla.textContent === "ERROR") {
             pantalla.textContent = botonOn;
-        }else{
+        } else {
             pantalla.textContent += botonOn;
         }
-        
+
     });
 });
