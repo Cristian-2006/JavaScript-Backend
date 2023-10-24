@@ -20,6 +20,7 @@ setInterval(() => {
     let segundo = tiempo.getSeconds();
 
     let ampm = hora >= 12 ? "PM" : "AM";
+    hora = hora % 12;
 
     hora = hora < 10 ? "0" + hora : hora;
     minuto = minuto < 10 ? "0" + minuto : minuto;
