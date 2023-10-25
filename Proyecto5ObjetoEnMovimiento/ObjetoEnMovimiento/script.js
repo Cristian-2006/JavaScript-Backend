@@ -1,7 +1,7 @@
 let esqueleto = "off";
 let esqueletoStop = document.getElementById("esqueletoquieto");
-let botonSonido = new Audio('C:\Users\Cristian Velandia\Desktop\Proyectos JavaScript\ObjetoEnMovimiento\sound\botonbailar.mp3');
-let botonAudio = new Audio('C:\Users\Cristian Velandia\Desktop\Proyectos JavaScript\ObjetoEnMovimiento\sound\audio.mp3');
+let botonSonido = new Audio('C:/Users/Cristian Velandia/Desktop/Proyectos JavaScript/ObjetoEnMovimiento/sound/botonbailar.mp3');
+let botonAudio = new Audio('C:/Users/Cristian Velandia/Desktop/Proyectos JavaScript/ObjetoEnMovimiento/sound/audio.mp3');
 
 function bailar() {
     if (esqueleto == "off") {
