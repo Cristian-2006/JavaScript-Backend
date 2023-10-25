@@ -11,11 +11,15 @@ function bailar() {
             botonSonido.play();
         })
         esqueletoStop.addEventListener('click', () => {
+            botonAudio.play();
         })
         console.log("On");
     } else {
         esqueleto = "off"
         esqueletoStop.classList.remove("on");
+        esqueletoStop.addEventListener('click', () => {
+            botonAudio.pause();
+        })
         console.log("Off");
     }
 }
