@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(83, 200, 220);
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+
+
+#titulo {
+    color: rgb(56, 77, 137);
+    position: relative;
+    top: -10vh;
+    left: -6vh;
+}
+
+.campo {
+    margin: 10px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    left: -60vh;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 3rem;
+    font-size: 2rem;
+    box-shadow: 0 0 10px rgba(198, 28, 45, 0.3);
+}
+
+
+.papaOff {
+    position: fixed;
+    top: 30vh;
+    width: 650px;
+    height: 600px;
+    left: 100vh;
+    background-image: url("../img/papaNoel1.png");
+    background-repeat: no-repeat;
+
+}
+
+.papaOff.on {
+    background-image: url("../img/papaNoel.gif");
+    background-repeat: no-repeat;
+}
+
+#play{
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 60vh;
+    left: 50vh;
+    width: 15vh;
+    height: 8vh;
+    border-radius: 3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+#pause{
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 60vh;
+    left: 70vh;
+    width: 15vh;
+    height: 8vh;
+    border-radius: 3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: rgb(249, 247, 247);
+}
+
+h1{
+    position: relative;
+    top:200px;
+    left:350px;
+}
+
+.esti{
+    position: relative;
+    top:210px;
+    left: 240px;
+}
+
+
+#pause.on {
+    background-color: rgb(231, 49, 70);
+}
+
+#play.on {
+    background-color: rgb(212, 20, 20);
+}
+
+#pause:hover.on {
+    color: rgb(143, 28, 28);
+    background-color: rgb(175, 67, 177);
+}
+
+#play:hover.on {
+    color: rgb(185, 30, 30);
+    background-color: rgb(175, 67, 177);
+}
