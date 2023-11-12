@@ -73,4 +73,4 @@ function cuentaRegresiva(tiempoFaltante, reloj, mensaje)
     }, 1000);
 }
 
-cuentaRegresiva('Nov 08 2023 20:32:00', 'cuentaRegresiva', '!FELIZ NAVIDAD¡')
+cuentaRegresiva('Dec 25 2023 00:00:00', 'cuentaRegresiva', '!FELIZ NAVIDAD¡')
